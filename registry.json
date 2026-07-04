@@ -4,8 +4,32 @@
   "description": "Community Docker Compose Templates for Arcane",
   "author": "getarcaneapp",
   "url": "https://github.com/getarcaneapp/templates",
-  "version": "1.24.2",
+  "version": "1.25.0",
   "templates": [
+    {
+      "id": "actual",
+      "name": "Actual",
+      "description": "Privacy-focused personal finance and budgeting server.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/actual/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/actual/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/actual",
+      "content_hash": "e7e9bf4fa15ddf244326dc71f1c7ecfe9a3f26296e6d8cf73d34315a675c4d0a",
+      "tags": ["finance", "budgeting"]
+    },
+    {
+      "id": "adguard-home",
+      "name": "AdGuard Home",
+      "description": "Network-wide DNS server for blocking ads, tracking, and malicious domains.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/adguard-home/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/adguard-home/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/adguard-home",
+      "content_hash": "b2c8dc5af1cf0012247b2374bf153978f05e61e07e8af6e2581627e2f5a835c4",
+      "tags": ["dns", "adblock", "privacy"]
+    },
     {
       "id": "affine",
       "name": "AFFiNE",
@@ -17,6 +41,42 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/affine",
       "content_hash": "7ad82e40069a42a75110b3134e3be1d126c4e2b0ff91a98ff469bf2f36cfa3b6",
       "tags": ["Productivity", "Notes"]
+    },
+    {
+      "id": "appsmith",
+      "name": "Appsmith",
+      "description": "Open-source low-code platform for building internal tools and dashboards.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/appsmith/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/appsmith/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/appsmith",
+      "content_hash": "01f26d8eb22ec810347f0023e58ad79cb707400077fc2bed8dfbe074488f3061",
+      "tags": ["development", "low-code", "productivity"]
+    },
+    {
+      "id": "audiobookshelf",
+      "name": "Audiobookshelf",
+      "description": "Self-hosted audiobook and podcast server.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/audiobookshelf/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/audiobookshelf/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/audiobookshelf",
+      "content_hash": "1775b0d51c26c47dabf74623e7bb84702b3af2facf071e499b6216377677d5ce",
+      "tags": ["media", "audiobooks", "podcasts"]
+    },
+    {
+      "id": "authentik",
+      "name": "Authentik",
+      "description": "Identity provider for SSO, OAuth2/OIDC, SAML, LDAP, and application access.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/authentik/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/authentik/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/authentik",
+      "content_hash": "e05be49dc4ce2fdc037e294608088a9fc71b51c8ca8e6e224fb5809bd2fd2285",
+      "tags": ["identity", "sso", "authentication"]
     },
     {
       "id": "baikal",
@@ -41,6 +101,42 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/bento-pdf",
       "content_hash": "214cf4b718083e25e64414af3e4b97e2f01581bfb8006b0a98be631d93f20027",
       "tags": ["Productivity", "PDF"]
+    },
+    {
+      "id": "beszel",
+      "name": "Beszel",
+      "description": "Lightweight server monitoring hub with Docker stats, historical data, and alerts.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/beszel/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/beszel/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/beszel",
+      "content_hash": "76fc8de965d93ce251737f52bf2a04a6685e63b58e220baf2f780af0147b422e",
+      "tags": ["monitoring", "metrics", "servers"]
+    },
+    {
+      "id": "bookstack",
+      "name": "BookStack",
+      "description": "Simple self-hosted platform for organizing documentation and wiki content.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/bookstack/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/bookstack/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/bookstack",
+      "content_hash": "30245261b9856608d7639547ea0537315980157e4f60fc17a7683f3c37405629",
+      "tags": ["wiki", "documentation"]
+    },
+    {
+      "id": "calibre-web",
+      "name": "Calibre-Web",
+      "description": "Web interface for browsing, reading, and downloading an existing Calibre eBook library.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/calibre-web/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/calibre-web/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/calibre-web",
+      "content_hash": "12affcf5347a7c2b9578b468c67637298f52e71d957bba7443091baa106b0e4e",
+      "tags": ["books", "ebooks", "media"]
     },
     {
       "id": "cloudflared",
@@ -91,6 +187,18 @@
       "tags": ["monitoring", "logging", "docker"]
     },
     {
+      "id": "duplicati",
+      "name": "Duplicati",
+      "description": "Backup client with encrypted, deduplicated backups to local or remote storage.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/duplicati/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/duplicati/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/duplicati",
+      "content_hash": "8e1a1f93a5b3ef4a8adb5d8cacdae29998cca8c50508231ca90891ee98898fd5",
+      "tags": ["backup", "storage"]
+    },
+    {
       "id": "endurain",
       "name": "Endurain",
       "description": "Endurain is a fitness tracking with control over their data and hosting environment.",
@@ -101,6 +209,18 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/endurain",
       "content_hash": "c89f2be52d78f861d0e6560463122659fd9039dc48ecbe1341554011606a8056",
       "tags": ["fitness", "gps-tracker"]
+    },
+    {
+      "id": "filebrowser",
+      "name": "File Browser",
+      "description": "Web file manager for browsing, uploading, renaming, editing, and sharing files.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/filebrowser/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/filebrowser/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/filebrowser",
+      "content_hash": "16582e833721fa2ae116507de76e8c3d7616d7191f2cc7600a899c52d10c3cd7",
+      "tags": ["files", "file-manager"]
     },
     {
       "id": "flyimg",
@@ -115,6 +235,18 @@
       "tags": ["Tools"]
     },
     {
+      "id": "forgejo",
+      "name": "Forgejo",
+      "description": "Lightweight self-hosted Git forge for repositories, issues, pull requests, and packages.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/forgejo/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/forgejo/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/forgejo",
+      "content_hash": "cab20266879cc7d875a72626ed4f4899087be2b32a5138c3829409d5bfbd7cbd",
+      "tags": ["git", "development", "forge"]
+    },
+    {
       "id": "fossflow",
       "name": "FossFLOW",
       "description": "Make beautiful isometric infrastructure diagrams.",
@@ -127,6 +259,42 @@
       "tags": ["tools", "infra", "devops"]
     },
     {
+      "id": "freshrss",
+      "name": "FreshRSS",
+      "description": "Fast self-hosted RSS and Atom feed reader.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/freshrss/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/freshrss/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/freshrss",
+      "content_hash": "114d6db16771c1e105162190b164a31c04225182cff1e58ed682ff5b0e877112",
+      "tags": ["rss", "feed-reader"]
+    },
+    {
+      "id": "grafana-prometheus",
+      "name": "Grafana and Prometheus",
+      "description": "Monitoring stack with Prometheus metrics collection, Node Exporter, and Grafana dashboards.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/grafana-prometheus/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/grafana-prometheus/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/grafana-prometheus",
+      "content_hash": "08070f36e1789a79706cb9ba8bfe33ab82fe1580ff355711aa9fd008c06a6231",
+      "tags": ["monitoring", "metrics", "dashboards"]
+    },
+    {
+      "id": "home-assistant",
+      "name": "Home Assistant",
+      "description": "Home automation platform for local smart home control and integrations.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/home-assistant/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/home-assistant/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/home-assistant",
+      "content_hash": "51080526fcf83120ad82eb54908fafd39e32263cef22b815f5d9bcdb70f8f147",
+      "tags": ["home-automation", "iot", "smart-home"]
+    },
+    {
       "id": "homepage",
       "name": "Homepage",
       "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
@@ -137,6 +305,18 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/homepage",
       "content_hash": "7a3d6a27ef10b9b89f3c0b4d807c5cbd5da65bcb815bacb1b645e92c2136f04d",
       "tags": ["homepages", "dashboards"]
+    },
+    {
+      "id": "immich",
+      "name": "Immich",
+      "description": "Self-hosted photo and video backup solution for mobile and web libraries.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/immich/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/immich/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/immich",
+      "content_hash": "a711cee81627bb86a6abc1a5f6855db141cdb714b513f02c8dd33a7c622b50ab",
+      "tags": ["photos", "backup", "media"]
     },
     {
       "id": "invidious",
@@ -175,6 +355,18 @@
       "tags": ["media", "streaming"]
     },
     {
+      "id": "komga",
+      "name": "Komga",
+      "description": "Media server for comics, manga, magazines, and eBooks.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/komga/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/komga/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/komga",
+      "content_hash": "54f957bb545f938d995c73182e93e008553d7c9e009958bb146ac0f0041dc893",
+      "tags": ["books", "comics", "media"]
+    },
+    {
       "id": "languagetool",
       "name": "LanguageTool",
       "description": "Style and Grammar Checker for 25+ Languages.",
@@ -185,6 +377,18 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/languagetool",
       "content_hash": "3ca906fded44c499de317eb1b2e524b6b9c6a8c8ae58d7674bdd49d58731b8e0",
       "tags": ["Tools"]
+    },
+    {
+      "id": "linkding",
+      "name": "Linkding",
+      "description": "Minimal self-hosted bookmark manager.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/linkding/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/linkding/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/linkding",
+      "content_hash": "dcd843932eab81fa1d5a4de71714a243e5879a9d196b6991d52c9895feafd583",
+      "tags": ["bookmarks", "productivity"]
     },
     {
       "id": "localai",
@@ -223,6 +427,18 @@
       "tags": ["image", "optimizer", "resizer", "compression"]
     },
     {
+      "id": "mealie",
+      "name": "Mealie",
+      "description": "Recipe manager and meal planner for personal or household cookbooks.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/mealie/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/mealie/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/mealie",
+      "content_hash": "3f4dda29722c164becc7ffcf91e3a1f60c51ae135434028f5656c1bb16321240",
+      "tags": ["recipes", "meal-planning"]
+    },
+    {
       "id": "metube",
       "name": "MeTube",
       "description": "Self-hosted YouTube downloader.",
@@ -233,6 +449,18 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/metube",
       "content_hash": "e8294ce8c9dd8b9870d3e8784014934ddaa8d87b885bbdf0ce95248a4970758d",
       "tags": ["youtube"]
+    },
+    {
+      "id": "minio",
+      "name": "MinIO",
+      "description": "S3-compatible object storage server with a web console.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/minio/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/minio/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/minio",
+      "content_hash": "a6ac2ce4c173671210e4e344e013c7068ea62834fc0ceb91392bd4ff60a20e0a",
+      "tags": ["storage", "s3"]
     },
     {
       "id": "mosparo",
@@ -247,6 +475,18 @@
       "tags": ["Tools"]
     },
     {
+      "id": "n8n",
+      "name": "n8n",
+      "description": "Workflow automation platform for connecting APIs, services, and custom logic.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/n8n/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/n8n/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/n8n",
+      "content_hash": "ee85809020adc1f29d86e76f084a23766d9c5a1cbb19ee105ae3aac13256542a",
+      "tags": ["automation", "workflow"]
+    },
+    {
       "id": "nextcloud",
       "name": "Nextcloud All-in-One",
       "description": "☁️ Nextcloud server, a safe home for all your data.",
@@ -257,6 +497,18 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/nextcloud",
       "content_hash": "c98df5805e5189276211416a0773c9bdf193410798ef7bf39429299a839c5c63",
       "tags": ["file-sharing", "collaboration", "storage", "cloud"]
+    },
+    {
+      "id": "nginx-proxy-manager",
+      "name": "Nginx Proxy Manager",
+      "description": "Web UI for managing Nginx proxy hosts, SSL certificates, and access lists.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/nginx-proxy-manager/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/nginx-proxy-manager/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/nginx-proxy-manager",
+      "content_hash": "48a24ea225684a9dd972a2f509574271dbf120f1d7cba81c808b9544f7720969",
+      "tags": ["reverse-proxy", "nginx", "ssl"]
     },
     {
       "id": "omnitools",
@@ -281,6 +533,18 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/one-time-secret",
       "content_hash": "a59567bce978cbf6d3f8ac8f5998600b37b0cef686e432896a39e52d9ff9d440",
       "tags": ["Security", "Productivity", "Utilities"]
+    },
+    {
+      "id": "paperless-ngx",
+      "name": "Paperless-ngx",
+      "description": "Document management system that turns scanned and uploaded documents into a searchable archive.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/paperless-ngx/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/paperless-ngx/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/paperless-ngx",
+      "content_hash": "2a73f6145ec07264eff6f8a474ad9fe2fe448411d9d69d81d004912c80221845",
+      "tags": ["documents", "ocr", "productivity"]
     },
     {
       "id": "patchmon",
@@ -391,6 +655,42 @@
       "tags": ["SQL"]
     },
     {
+      "id": "prowlarr",
+      "name": "Prowlarr",
+      "description": "Indexer manager and proxy for media automation apps.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/prowlarr/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/prowlarr/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/prowlarr",
+      "content_hash": "a649eba79d558e72452702be90835ead10d7a09f28eb352d681924de61102cac",
+      "tags": ["media", "indexers", "downloaders"]
+    },
+    {
+      "id": "radarr",
+      "name": "Radarr",
+      "description": "Movie collection manager for automated downloading, sorting, and library organization.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/radarr/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/radarr/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/radarr",
+      "content_hash": "4cd7983cb6ae80a12b5b06d3780b16015acc64fda207c80f78acedb65cac4764",
+      "tags": ["media", "movies", "automation"]
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "description": "In-memory data store commonly used for caching, queues, and application state.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/redis/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/redis/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/redis",
+      "content_hash": "97ea730ebfdea380d0de263e1de3473c5f79a70f671abeee9dc81502e7abf914",
+      "tags": ["database", "cache"]
+    },
+    {
       "id": "rybbit",
       "name": "Rybbit",
       "description": "Website analytics without cookies.",
@@ -425,6 +725,18 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/seerr",
       "content_hash": "f14a4f72304b4f77836d6e1245bb1fb7db405e03c3c584ab6a4ad797c1bc373b",
       "tags": ["media", "streaming", "requests", "jellyfin", "plex", "seerr"]
+    },
+    {
+      "id": "sonarr",
+      "name": "Sonarr",
+      "description": "TV series manager for automated downloading, sorting, and library organization.",
+      "version": "1.0.0",
+      "author": "getarcaneapp",
+      "compose_url": "https://registry.getarcane.app/templates/sonarr/compose.yaml",
+      "env_url": "https://registry.getarcane.app/templates/sonarr/.env.example",
+      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/sonarr",
+      "content_hash": "baf3d6598587094244a0ea1689cec17bccb10c4bbab610c952f6f2824d0f7d8c",
+      "tags": ["media", "tv", "automation"]
     },
     {
       "id": "string-is",
