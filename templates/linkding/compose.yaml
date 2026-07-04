@@ -1,0 +1,22 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/linkding.svg
+  urls:
+    - https://linkding.link/
+    - https://github.com/sissbruecker/linkding
+
+services:
+  linkding:
+    image: sissbruecker/linkding:latest
+    container_name: linkding
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-9090}:9090"
+    environment:
+      LD_SECRET_KEY: ${LD_SECRET_KEY}
+      LD_SUPERUSER_NAME: ${LD_SUPERUSER_NAME}
+      LD_SUPERUSER_PASSWORD: ${LD_SUPERUSER_PASSWORD}
+      LD_DISABLE_BACKGROUND_TASKS: ${LD_DISABLE_BACKGROUND_TASKS:-false}
+    volumes:
+      - ${BASE_PATH}/data:/etc/linkding/data
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/linkding.svg

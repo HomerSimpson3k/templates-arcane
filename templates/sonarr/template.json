@@ -1,0 +1,7 @@
+{
+  "name": "Sonarr",
+  "description": "TV series manager for automated downloading, sorting, and library organization.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["media", "tv", "automation"]
+}

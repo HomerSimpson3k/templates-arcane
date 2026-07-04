@@ -1,0 +1,7 @@
+{
+  "name": "Audiobookshelf",
+  "description": "Self-hosted audiobook and podcast server.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["media", "audiobooks", "podcasts"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "File Browser",
+  "description": "Web file manager for browsing, uploading, renaming, editing, and sharing files.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["files", "file-manager"]
+}

@@ -1,0 +1,30 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/freshrss.svg
+  urls:
+    - https://freshrss.org/
+    - https://github.com/FreshRSS/FreshRSS
+
+services:
+  freshrss:
+    image: freshrss/freshrss:latest
+    container_name: freshrss
+    hostname: freshrss
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8088}:80"
+    logging:
+      options:
+        max-size: 10m
+    environment:
+      TZ: ${TZ:-Etc/UTC}
+      CRON_MIN: ${CRON_MIN:-3,33}
+      TRUSTED_PROXY: ${TRUSTED_PROXY:-172.16.0.1/12 192.168.0.1/16}
+    volumes:
+      - data:/var/www/FreshRSS/data
+      - extensions:/var/www/FreshRSS/extensions
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/freshrss.svg
+
+volumes:
+  data:
+  extensions:

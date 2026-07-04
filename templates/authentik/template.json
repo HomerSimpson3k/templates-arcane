@@ -1,0 +1,7 @@
+{
+  "name": "Authentik",
+  "description": "Identity provider for SSO, OAuth2/OIDC, SAML, LDAP, and application access.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["identity", "sso", "authentication"]
+}

@@ -1,0 +1,20 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/komga.svg
+  urls:
+    - https://komga.org/
+    - https://github.com/gotson/komga
+
+services:
+  komga:
+    image: gotson/komga:latest
+    container_name: komga
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-25600}:25600"
+    environment:
+      TZ: ${TZ:-Etc/UTC}
+    volumes:
+      - ${BASE_PATH}/config:/config
+      - ${BOOKS_PATH}:/data
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/komga.svg

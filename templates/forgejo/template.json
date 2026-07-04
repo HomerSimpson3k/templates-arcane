@@ -1,0 +1,7 @@
+{
+  "name": "Forgejo",
+  "description": "Lightweight self-hosted Git forge for repositories, issues, pull requests, and packages.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["git", "development", "forge"]
+}

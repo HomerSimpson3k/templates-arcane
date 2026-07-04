@@ -1,0 +1,7 @@
+{
+  "name": "Grafana and Prometheus",
+  "description": "Monitoring stack with Prometheus metrics collection, Node Exporter, and Grafana dashboards.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["monitoring", "metrics", "dashboards"]
+}

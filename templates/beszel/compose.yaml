@@ -1,0 +1,37 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/beszel.svg
+  urls:
+    - https://beszel.dev/
+    - https://github.com/henrygd/beszel
+
+services:
+  beszel:
+    image: henrygd/beszel:latest
+    container_name: beszel
+    restart: unless-stopped
+    environment:
+      APP_URL: ${APP_URL}
+    ports:
+      - "${APP_PORT:-8090}:8090"
+    volumes:
+      - ${BASE_PATH}/beszel_data:/beszel_data
+      - ${BASE_PATH}/beszel_socket:/beszel_socket
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/beszel.svg
+
+  beszel-agent:
+    image: henrygd/beszel-agent:latest
+    container_name: beszel-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ${BASE_PATH}/beszel_agent_data:/var/lib/beszel-agent
+      - ${BASE_PATH}/beszel_socket:/beszel_socket
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      LISTEN: /beszel_socket/beszel.sock
+      HUB_URL: ${HUB_URL}
+      TOKEN: ${TOKEN}
+      KEY: ${KEY}
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/beszel.svg

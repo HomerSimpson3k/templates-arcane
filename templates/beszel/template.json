@@ -1,0 +1,7 @@
+{
+  "name": "Beszel",
+  "description": "Lightweight server monitoring hub with Docker stats, historical data, and alerts.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["monitoring", "metrics", "servers"]
+}

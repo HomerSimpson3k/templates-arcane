@@ -1,0 +1,22 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/duplicati.svg
+  urls:
+    - https://duplicati.com/
+    - https://github.com/duplicati/duplicati
+
+services:
+  duplicati:
+    image: lscr.io/linuxserver/duplicati:latest
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8200}:8200"
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-Etc/UTC}
+    volumes:
+      - ${BASE_PATH}/config:/config
+      - ${BACKUPS_PATH}:/backups
+      - ${SOURCE_PATH}:/source:ro
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/duplicati.svg

@@ -1,0 +1,7 @@
+{
+  "name": "Actual",
+  "description": "Privacy-focused personal finance and budgeting server.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["finance", "budgeting"]
+}

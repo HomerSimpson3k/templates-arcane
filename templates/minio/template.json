@@ -1,0 +1,7 @@
+{
+  "name": "MinIO",
+  "description": "S3-compatible object storage server with a web console.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["storage", "s3"]
+}

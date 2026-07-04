@@ -1,0 +1,27 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/mealie.svg
+  urls:
+    - https://mealie.io/
+    - https://github.com/mealie-recipes/mealie
+
+services:
+  mealie:
+    image: ghcr.io/mealie-recipes/mealie:latest
+    container_name: mealie
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-9925}:9000"
+    environment:
+      ALLOW_SIGNUP: ${ALLOW_SIGNUP:-false}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-Etc/UTC}
+      BASE_URL: ${BASE_URL}
+      DB_ENGINE: sqlite
+    volumes:
+      - mealie-data:/app/data/
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/mealie.svg
+
+volumes:
+  mealie-data:

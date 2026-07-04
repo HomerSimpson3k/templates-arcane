@@ -1,0 +1,7 @@
+{
+  "name": "BookStack",
+  "description": "Simple self-hosted platform for organizing documentation and wiki content.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["wiki", "documentation"]
+}

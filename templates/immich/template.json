@@ -1,0 +1,7 @@
+{
+  "name": "Immich",
+  "description": "Self-hosted photo and video backup solution for mobile and web libraries.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["photos", "backup", "media"]
+}

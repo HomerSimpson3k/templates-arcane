@@ -1,0 +1,7 @@
+{
+  "name": "Calibre-Web",
+  "description": "Web interface for browsing, reading, and downloading an existing Calibre eBook library.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["books", "ebooks", "media"]
+}

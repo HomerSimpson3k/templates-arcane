@@ -1,0 +1,7 @@
+{
+  "name": "Mealie",
+  "description": "Recipe manager and meal planner for personal or household cookbooks.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["recipes", "meal-planning"]
+}

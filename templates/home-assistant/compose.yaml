@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/home-assistant.svg
+  urls:
+    - https://www.home-assistant.io/
+    - https://github.com/home-assistant/core
+
+services:
+  home-assistant:
+    image: ghcr.io/home-assistant/home-assistant:stable
+    container_name: home-assistant
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      TZ: ${TZ:-Etc/UTC}
+    volumes:
+      - ${BASE_PATH}/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/home-assistant.svg

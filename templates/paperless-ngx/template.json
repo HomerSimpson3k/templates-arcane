@@ -1,0 +1,7 @@
+{
+  "name": "Paperless-ngx",
+  "description": "Document management system that turns scanned and uploaded documents into a searchable archive.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["documents", "ocr", "productivity"]
+}

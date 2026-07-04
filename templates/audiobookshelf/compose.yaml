@@ -1,0 +1,20 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/audiobookshelf.svg
+  urls:
+    - https://www.audiobookshelf.org/
+    - https://github.com/advplyr/audiobookshelf
+
+services:
+  audiobookshelf:
+    image: ghcr.io/advplyr/audiobookshelf:latest
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-13378}:80"
+    user: "${PUID:-1000}:${PGID:-1000}"
+    volumes:
+      - ${AUDIOBOOKS_PATH}:/audiobooks
+      - ${PODCASTS_PATH}:/podcasts
+      - ${BASE_PATH}/metadata:/metadata
+      - ${BASE_PATH}/config:/config
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/audiobookshelf.svg

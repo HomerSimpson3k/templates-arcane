@@ -1,0 +1,7 @@
+{
+  "name": "Komga",
+  "description": "Media server for comics, manga, magazines, and eBooks.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["books", "comics", "media"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Prowlarr",
+  "description": "Indexer manager and proxy for media automation apps.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["media", "indexers", "downloaders"]
+}

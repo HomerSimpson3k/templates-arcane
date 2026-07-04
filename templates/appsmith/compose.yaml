@@ -1,0 +1,21 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/appsmith.webp
+  urls:
+    - https://www.appsmith.com/
+    - https://github.com/appsmithorg/appsmith
+
+services:
+  appsmith:
+    image: index.docker.io/appsmith/appsmith-ce:release
+    container_name: appsmith
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8080}:80"
+    environment:
+      APPSMITH_ENCRYPTION_PASSWORD: ${APPSMITH_ENCRYPTION_PASSWORD}
+      APPSMITH_ENCRYPTION_SALT: ${APPSMITH_ENCRYPTION_SALT}
+      APPSMITH_DISABLE_TELEMETRY: ${APPSMITH_DISABLE_TELEMETRY:-true}
+    volumes:
+      - ${BASE_PATH}/stacks:/appsmith-stacks
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/appsmith.webp

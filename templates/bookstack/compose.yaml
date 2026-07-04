@@ -1,0 +1,50 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/bookstack.svg
+  urls:
+    - https://www.bookstackapp.com/
+    - https://github.com/BookStackApp/BookStack
+
+services:
+  bookstack:
+    image: lscr.io/linuxserver/bookstack:latest
+    restart: unless-stopped
+    depends_on:
+      - bookstack-db
+    ports:
+      - "${APP_PORT:-6875}:80"
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-Etc/UTC}
+      APP_URL: ${APP_URL}
+      APP_KEY: ${APP_KEY}
+      DB_HOST: bookstack-db
+      DB_PORT: 3306
+      DB_DATABASE: ${MYSQL_DATABASE:-bookstack}
+      DB_USERNAME: ${MYSQL_USER:-bookstack}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ${BASE_PATH}/config:/config
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/bookstack.svg
+
+  bookstack-db:
+    image: lscr.io/linuxserver/mariadb:latest
+    restart: unless-stopped
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-Etc/UTC}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-bookstack}
+      MYSQL_USER: ${MYSQL_USER:-bookstack}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ${BASE_PATH}/database:/config
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h localhost -u$${MYSQL_USER} -p$${MYSQL_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/mariadb.svg

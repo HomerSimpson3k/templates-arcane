@@ -1,0 +1,7 @@
+{
+  "name": "FreshRSS",
+  "description": "Fast self-hosted RSS and Atom feed reader.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["rss", "feed-reader"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "n8n",
+  "description": "Workflow automation platform for connecting APIs, services, and custom logic.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["automation", "workflow"]
+}

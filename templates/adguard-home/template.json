@@ -1,0 +1,7 @@
+{
+  "name": "AdGuard Home",
+  "description": "Network-wide DNS server for blocking ads, tracking, and malicious domains.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["dns", "adblock", "privacy"]
+}

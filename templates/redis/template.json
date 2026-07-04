@@ -1,0 +1,7 @@
+{
+  "name": "Redis",
+  "description": "In-memory data store commonly used for caching, queues, and application state.",
+  "version": "1.0.0",
+  "author": "getarcaneapp",
+  "tags": ["database", "cache"]
+}

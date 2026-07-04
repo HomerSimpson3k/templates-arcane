@@ -1,0 +1,21 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/nginx-proxy-manager.svg
+  urls:
+    - https://nginxproxymanager.com/
+    - https://github.com/NginxProxyManager/nginx-proxy-manager
+
+services:
+  nginx-proxy-manager:
+    image: docker.io/jc21/nginx-proxy-manager:latest
+    restart: unless-stopped
+    ports:
+      - "${HTTP_PORT:-80}:80"
+      - "${ADMIN_PORT:-81}:81"
+      - "${HTTPS_PORT:-443}:443"
+    environment:
+      DISABLE_IPV6: ${DISABLE_IPV6:-false}
+    volumes:
+      - ${BASE_PATH}/data:/data
+      - ${BASE_PATH}/letsencrypt:/etc/letsencrypt
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/nginx-proxy-manager.svg
