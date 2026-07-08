@@ -4,7 +4,7 @@
   "description": "Community Docker Compose Templates for Arcane",
   "author": "getarcaneapp",
   "url": "https://github.com/getarcaneapp/templates",
-  "version": "1.26.0",
+  "version": "1.25.0",
   "templates": [
     {
       "id": "actual",
@@ -125,18 +125,6 @@
       "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/bookstack",
       "content_hash": "30245261b9856608d7639547ea0537315980157e4f60fc17a7683f3c37405629",
       "tags": ["wiki", "documentation"]
-    },
-    {
-      "id": "bytestash",
-      "name": "ByteStash",
-      "description": "A code snippet storage solution written in React & node.js",
-      "version": "1.0.0",
-      "author": "HomerSimpson3k",
-      "compose_url": "https://registry.getarcane.app/templates/bytestash/compose.yml",
-      "env_url": "https://registry.getarcane.app/templates/bytestash/.env.example",
-      "documentation_url": "https://github.com/getarcaneapp/templates/tree/main/templates/bytestash",
-      "content_hash": "a7a009497f2382f928b035653df2ddd46f871495c206b76effa6a47f023815b3",
-      "tags": ["development", "productivity"]
     },
     {
       "id": "calibre-web",
