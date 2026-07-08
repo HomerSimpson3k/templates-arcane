@@ -1,0 +1,24 @@
+x-arcane:
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/bytestash.svg
+  urls:
+    - https://github.com/jordan-dalby/ByteStash
+
+services:
+  bytestash:
+    image: ghcr.io/jordan-dalby/bytestash:latest
+    container_name: bytestash
+    hostname: bytestash
+    restart: unless-stopped
+    volumes:
+      - ./snippet:/data/snippets
+    networks:
+      - bytestash
+    ports:
+      - 5000:5000
+    env_file: .env
+    labels:
+      com.getarcaneapp.arcane.icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/bytestash.svg
+
+networks:
+  bytestash:
+    external: false

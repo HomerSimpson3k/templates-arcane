@@ -1,0 +1,7 @@
+{
+  "name": "ByteStash",
+  "description": "A code snippet storage solution written in React & node.js",
+  "version": "1.0.0",
+  "author": "HomerSimpson3k",
+  "tags": ["development", "productivity"]
+}
